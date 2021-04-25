@@ -1,0 +1,14 @@
+.App {
+  text-align: center;
+}
+#keranjang {
+  position: relative;
+}
+.badge {
+  position: absolute;
+  top: 5px;
+  right: -5px;
+}
+.btn {
+  border-radius: 30px;
+}

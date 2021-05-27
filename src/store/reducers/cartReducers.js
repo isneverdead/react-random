@@ -1,17 +1,4 @@
-const initialState = [
-  {
-    id: 1,
-    productId: 2,
-    description: 'lorem ipsum',
-    quantity: 1,
-  },
-  {
-    id: 3,
-    productId: 4,
-    description: 'lorem ipsum',
-    quantity: 10,
-  },
-]
+const initialState = []
 let number = 1
 const cartReducers = (state = initialState, action) => {
   switch (action.type) {
@@ -27,8 +14,6 @@ const cartReducers = (state = initialState, action) => {
       ]
     case 'remove-cart':
       return state.filter(item => item.id !== action.payload.id)
-
-    // return state.filter(item => item.id != parseInt(action.payload.id))
     default:
       return state
   }
